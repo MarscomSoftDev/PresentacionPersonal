@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-Regular.woff2") format("woff2"),
+    url("/fonts/Raleway-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.section-formacion-academica {
+  background-color: #eaf2fd;
+  height: 800px;
+  display: flex; /* Habilita flexbox */
+  flex-direction: column; /* Coloca el título y los estudios en columna */
+  align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.titulo-section-formacion-academica {
+  margin-top: 82px;
+  margin-bottom: 32px; /* Espacio entre el título y los estudios */
+  font-size: 1.25em;
+}
+
+.estudios-contenedor {
+  display: flex; /* Habilita flexbox para los estudios */
+  justify-content: center; /* Centra los estudios horizontalmente */
+  gap: 10px; /* Espacio entre los divs de estudios */
+}
+
+.estudio_uno,
+.estudio_dos,
+.estudio_tres,
+.estudio_cuatro {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  display: flex; /* Habilita flexbox para centrar el texto en los estudios */
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido horizontalmente dentro de cada div */
+  align-items: flex-start; /* Centra el contenido verticalmente dentro de cada div */
+  font-family: "Raleway", sans-serif;
+}
+
+/* estudio ingenieria de sistemas */
+
+.estudio_uno_imagen_unad {
+  height: 130px;
+  height: 130px;
+  margin-top: 40px;
+  margin-left: 17px;
+}
+
+.estudio_uno_parrafo {
+  text-align: left;
+  width: 200px;
+  height: 20px;
+  background-color: #eaf2fd;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1em;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.estudio_uno_parrafo_uno {
+  padding: 0;
+  margin: 0;
+  background-color: #eaf2fd;
+  width: 200px;
+  height: 20px;
+}
+
+/* estudio ADSO SENA */
+
+.estudio_dos_imagen_adso {
+  height: 130px;
+  height: 130px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.estudio_dos_parrafo {
+  text-align: left;
+  width: 200px;
+  height: 20px;
+  background-color: #eaf2fd;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1em;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.estudio_dos_parrafo_dos {
+  padding: 0;
+  margin: 0;
+  background-color: #eaf2fd;
+  width: 200px;
+  height: 20px;
+}
+
+/* estudio Alura Latam */
+
+.estudio_tres {
+  align-items: center;
+}
+
+.estudio_tres_imagen_tres {
+  height: 130px;
+  height: 130px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.estudio_tres_parrafo {
+  text-align: left;
+  width: 200px;
+  height: 20px;
+  background-color: #eaf2fd;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1em;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.estudio_tres_parrafo_tres {
+  padding: 0;
+  margin: 0;
+  background-color: #eaf2fd;
+  width: 200px;
+  height: 20px;
+}
+
+/* estudios talentotech */
+
+.estudio_cuatro_imagen_cuatro {
+  height: 130px;
+  height: 130px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+.estudio_cuatro_parrafo {
+  text-align: left;
+  width: 200px;
+  height: 20px;
+  background-color: #eaf2fd;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1em;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.estudio_cuatro_parrafo_cuatro {
+  padding: 0;
+  margin: 0;
+  background-color: #eaf2fd;
+  width: 200px;
+  height: 20px;
+}
+
+/* otros estudios */
+
+.section-otros-estudios-titulo {
+  text-align: center;
+  font-size: 2em;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 32px;
+  margin-top: 82px;
+  font-family: "raleway", sans-serif;
+}
+
+/* Estilo para el contenedor principal de la sección de skills */
+.section-otros-estudios {
+  width: calc(100% - 152px); /* Resta espacio lateral */
+  height: 244px; /* Dejar que la altura se ajuste al contenido */
+  display: flex;
+  flex-direction: column; /* Alinear título y contenedores en columna */
+  justify-content: center;
+  align-items: center;
+  margin: 88px 80px; /* Márgenes para ajustar la posición */
+  margin-bottom: 88px;
+}
+
+/* Estilo para el título centrado */
+.section-hobbies-titulo {
+  text-align: center;
+  font-size: 2em;
+  margin: auto;
+  padding: 0;
+  margin-top: 0%;
+}
+
+/* Contenedor principal de los skills */
+.section-estudios-contenedor-principal {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Permitir que los contenedores hagan wrap si es necesario */
+  width: 100%; /* Ocupar todo el ancho disponible */
+  max-width: 1136px; /* Limitar el ancho máximo del contenedor */
+  padding: 0; /* Sin padding */
+  gap: 6px; /* Espacio entre los elementos de skills */
+}
+
+/* Cada contenedor individual de skill */
+.section-estudios-estudios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  height: 180px;
+  box-sizing: border-box; /* Incluir el padding en el cálculo de ancho y alto */
+  text-align: center;
+  color: black; /* Centrar el texto en cada contenedor */
+  padding: 0px;
+}
+
+/* Estilo para las imágenes dentro de cada skill */
+.section-estudios-estudios img {
+  width: 80px; /* Ajusta el tamaño de las imágenes según sea necesario */
+  height: 80px;
+  margin-top: 20px;
+  margin-bottom: 8px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para el texto debajo de la imagen */
+.section-estudios-estudios p {
+  margin: 20px; /* Elimina el margen por defecto del párrafo */
+  font-size: 0.75em;
+  color: black; /* Cambiar el color del texto si es necesario */
+  margin-right: 10px;
+}
