@@ -28,32 +28,39 @@
 }
 
 .estudios-contenedor {
-  display: flex; /* Habilita flexbox para los estudios */
-  justify-content: center; /* Centra los estudios horizontalmente */
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
   gap: 10px;
-  background-color: blueviolet;
+  background-color: black;
+  align-items: center;
 }
 
 .estudio_uno,
 .estudio_dos,
 .estudio_tres,
 .estudio_cuatro {
-  background-color: rgb(0, 0, 0);
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   font-family: "Raleway", sans-serif;
   flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }
 
 /* estudio ingenieria de sistemas */
 
-.estudio_uno_imagen_unad {
+.estudio_uno {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.estudio_uno_imagen_unad {
+  width: 90%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
 }
@@ -61,19 +68,18 @@
 .estudio_uno_parrafo {
   display: flex;
   justify-content: flex-start;
-  width: 100%;
+  width: 90%;
   height: 20px;
   background-color: #eaf2fd;
   padding: 0;
   margin: 0;
   font-size: 1em;
-  margin-top: 5px;
   font-weight: bold;
 }
 
 .estudio_uno_parrafo_uno {
   background-color: #eaf2fd;
-  width: 100%;
+  width: 90%;
   height: 20px;
   margin: 0;
   padding: 0;
@@ -82,10 +88,9 @@
 /* estudio ADSO SENA */
 
 .estudio_dos_imagen_adso {
-  width: 90%;
-  height: auto;
+  width: 100%;
+  height: 200px;
   display: flex;
-  margin-left: 10px;
 }
 
 .estudio_dos_parrafo {
@@ -97,8 +102,6 @@
   margin: 0;
   font-weight: bold;
   font-size: 1em;
-
-  margin-top: 5px;
 }
 
 .estudio_dos_parrafo_dos {
@@ -112,18 +115,15 @@
 /* estudio Alura Latam */
 
 .estudio_tres {
-  width: 90%;
+  width: 100%;
   height: auto;
   display: flex;
-  margin-left: 10px;
   flex-wrap: wrap;
 }
 
 .estudio_tres_imagen_tres {
-  width: 90%;
-  height: auto;
-  margin-left: 10px;
-  margin-bottom: 25px;
+  width: 100%;
+  height: 200px;
 }
 
 .estudio_tres_parrafo {
@@ -135,7 +135,7 @@
   margin: 0;
   font-weight: bold;
   font-size: 1em;
-  justify-content: center;
+  display: flex;
 }
 
 .estudio_tres_parrafo_tres {
@@ -147,33 +147,36 @@
 }
 
 /* estudios talentotech */
+.estudio_cuatro {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+}
 
 .estudio_cuatro_imagen_cuatro {
-  width: 90%;
-  height: auto;
-  margin-left: 10px;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 200px;
 }
 
 .estudio_cuatro_parrafo {
-  display: flex;
-  justify-content: center;
   width: 100%;
   height: 20px;
   background-color: #eaf2fd;
-  padding: 0;
-  margin: 0;
   font-weight: bold;
   font-size: 1em;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .estudio_cuatro_parrafo_cuatro {
-  padding: 0;
-  margin: 0;
   background-color: #eaf2fd;
   width: 100%;
   height: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 /* otros estudios */
@@ -248,4 +251,69 @@
   font-size: 0.75em;
   color: black; /* Cambiar el color del texto si es necesario */
   margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .section-formacion-academica {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .titulo-section-formacion-academica {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20x;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .estudios-contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .estudio_uno,
+  .estudio_dos,
+  .estudio_tres,
+  .estudio_cuatro {
+    width: 100%;
+    height: auto;
+    background-color: chartreuse;
+  }
+  .estudio_uno {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .estudio_dos_imagen_adso {
+    width: 72%;
+    height: auto;
+    display: flex;
+  }
+  .estudio_tres {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .estudio_tres_imagen_tres {
+    width: 72%;
+    height: auto;
+  }
+  .estudio_cuatro_imagen_cuatro {
+    width: 72%;
+    height: auto;
+  }
 }
