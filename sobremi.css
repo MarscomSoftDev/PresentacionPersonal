@@ -11,8 +11,8 @@
   width: 100%;
   height: 356px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .section-sobremi-titulo {
@@ -20,7 +20,7 @@
   flex-wrap: wrap;
   width: 75%;
   height: auto;
-
+  font-size: 20px;
   padding-top: 20px;
   margin-left: 40px;
 }
@@ -45,13 +45,13 @@
 
 /* Estilo para el contenedor principal de la sección de skills */
 .section-skills {
-  width: calc(100% - 152px); /* Resta espacio lateral */
-  height: 244px; /* Dejar que la altura se ajuste al contenido */
+  width: 100%;
+  height: auto; /* Dejar que la altura se ajuste al contenido */
   display: flex;
-  flex-direction: column; /* Alinear título y contenedores en columna */
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin: 32px 80px; /* Márgenes para ajustar la posición */
+  padding-bottom: 40px;
+  flex-direction: column;
 }
 
 /* Estilo para el título centrado */
@@ -61,6 +61,8 @@
   margin: auto;
   padding: 0;
   margin-top: 0%;
+  padding-bottom: 40px;
+  padding: 40px;
 }
 
 /* Contenedor principal de los skills */
@@ -71,27 +73,23 @@
   width: 100%; /* Ocupar todo el ancho disponible */
   max-width: 1136px; /* Limitar el ancho máximo del contenedor */
   padding: 0; /* Sin padding */
-  gap: 6px; /* Espacio entre los elementos de skills */
+  gap: 10px;
 }
 
-/* Cada contenedor individual de skill */
 .section-skills-skills {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(255, 255, 255);
-  width: 130px;
-  height: 150px;
-  box-sizing: border-box; /* Incluir el padding en el cálculo de ancho y alto */
+  width: 150px;
+  height: 120px;
   text-align: center;
-  color: black; /* Centrar el texto en cada contenedor */
-  padding: 0px;
 }
 
 /* Estilo para las imágenes dentro de cada skill */
 .section-skills-skills img {
-  margin-top: 85px;
-  margin-right: 70px;
+  margin-top: 60px;
+  margin-right: 90px;
   width: 30px; /* Ajusta el tamaño de las imágenes según sea necesario */
   height: 30px;
   margin-bottom: 8px; /* Espacio entre la imagen y el texto */
@@ -99,23 +97,25 @@
 
 /* Estilo para el texto debajo de la imagen */
 .section-skills-skills p {
+  justify-content: flex-start;
+  align-self: flex-start;
   margin: 0; /* Elimina el margen por defecto del párrafo */
   font-size: 1em;
   color: black; /* Cambiar el color del texto si es necesario */
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /* Hobbies, Hobbies, Hobbies, Hobbies, Hobbies,  */
 
 /* Estilo para el contenedor principal de la sección de skills */
 .section-hobbies {
-  width: calc(100% - 152px); /* Resta espacio lateral */
-  height: 244px; /* Dejar que la altura se ajuste al contenido */
+  width: 100%; /* Resta espacio lateral */
+  height: auto; /* Dejar que la altura se ajuste al contenido */
   display: flex;
   flex-direction: column; /* Alinear título y contenedores en columna */
   justify-content: center;
   align-items: center;
-  margin: 88px 80px; /* Márgenes para ajustar la posición */
+  margin-top: 30px;
   margin-bottom: 88px;
 }
 
@@ -123,7 +123,6 @@
 .section-hobbies-titulo {
   text-align: center;
   font-size: 2em;
-  margin: auto;
   padding: 0;
   margin-top: 0%;
 }
@@ -136,7 +135,7 @@
   width: 100%; /* Ocupar todo el ancho disponible */
   max-width: 1136px; /* Limitar el ancho máximo del contenedor */
   padding: 0; /* Sin padding */
-  gap: 6px; /* Espacio entre los elementos de skills */
+  gap: 10px; /* Espacio entre los elementos de skills */
 }
 
 /* Cada contenedor individual de skill */
@@ -145,12 +144,11 @@
   flex-direction: column;
   align-items: center;
   background-color: rgb(255, 255, 255);
-  width: 130px;
+  width: 150px;
   height: 150px;
-  box-sizing: border-box; /* Incluir el padding en el cálculo de ancho y alto */
   text-align: center;
   color: black; /* Centrar el texto en cada contenedor */
-  padding: 0px;
+  margin-top: 20px;
 }
 
 /* Estilo para las imágenes dentro de cada skill */
@@ -174,10 +172,10 @@
   .section-sobremi {
     background-color: #eaf2fd;
     width: 100%;
-    height: 400px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .section-sobremi-titulo {
@@ -195,12 +193,74 @@
     flex-wrap: wrap;
     width: 90%;
     font-size: 1em;
-
     text-align: left;
     margin-left: 40px;
   }
 
   .section-sobremi-parrafo em {
     text-decoration: none;
+  }
+
+  .section-skills {
+    width: 100%;
+    height: auto; /* Dejar que la altura se ajuste al contenido */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section-skills-contenedor-principal {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permitir que los contenedores hagan wrap si es necesario */
+    width: 100%; /* Ocupar todo el ancho disponible */
+    gap: 10px;
+    margin: auto;
+    padding: auto;
+  }
+
+  .section-skills-skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 120px;
+    text-align: center;
+  }
+
+  .section-hobbies-contenedor-principal {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permitir que los contenedores hagan wrap si es necesario */
+    width: 100%; /* Ocupar todo el ancho disponible */
+    gap: 10px;
+    margin: auto;
+    padding: auto;
+  }
+
+  /* Cada contenedor individual de skill */
+  .section-hobbies-hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 120px;
+    text-align: center;
+    color: black; /* Centrar el texto en cada contenedor */
+    margin-top: 30px;
+  }
+  .section-hobbies-hobbies img {
+    margin-top: 60px;
+    margin-right: 70px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+  }
+
+  /* Estilo para el texto debajo de la imagen */
+  .section-hobbies-hobbies p {
+    margin-right: 40px;
   }
 }
