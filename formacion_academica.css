@@ -188,41 +188,32 @@
   font-size: 2em;
   margin: auto;
   padding: 0;
-  margin-bottom: 32px;
-  margin-top: 82px;
+  margin-bottom: 40px;
+  margin-top: 50px;
   font-family: "raleway", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Estilo para el contenedor principal de la sección de skills */
 .section-otros-estudios {
-  width: calc(100% - 152px); /* Resta espacio lateral */
-  height: 244px; /* Dejar que la altura se ajuste al contenido */
+  width: 100%; /* Resta espacio lateral */
+  height: auto; /* Dejar que la altura se ajuste al contenido */
   display: flex;
   flex-direction: column; /* Alinear título y contenedores en columna */
   justify-content: center;
   align-items: center;
-  margin: 88px 80px; /* Márgenes para ajustar la posición */
-  margin-bottom: 88px;
-}
-
-/* Estilo para el título centrado */
-.section-hobbies-titulo {
-  text-align: center;
-  font-size: 2em;
-  margin: auto;
-  padding: 0;
-  margin-top: 0%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 /* Contenedor principal de los skills */
 .section-estudios-contenedor-principal {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* Permitir que los contenedores hagan wrap si es necesario */
-  width: 100%; /* Ocupar todo el ancho disponible */
+  flex-wrap: wrap;
+  width: 100%;
   max-width: 1136px; /* Limitar el ancho máximo del contenedor */
-  padding: 0; /* Sin padding */
-  gap: 6px; /* Espacio entre los elementos de skills */
 }
 
 /* Cada contenedor individual de skill */
@@ -350,5 +341,23 @@
 
   .estudio_cuatro_parrafo_cuatro {
     margin-left: 30px;
+  }
+
+  .section-otros-estudios {
+    display: flex;
+
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+  }
+
+  /* Contenedor principal de los skills */
+  .section-estudios-contenedor-principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
   }
 }
