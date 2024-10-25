@@ -22,7 +22,7 @@
   margin-top: 20px;
   margin-bottom: 32px;
   font-size: 1.25em;
-  background-color: rgb(197, 13, 13);
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -33,7 +33,7 @@
   display: flex;
   justify-content: space-around;
   gap: 10px;
-  background-color: black;
+
   align-items: center;
 }
 
@@ -134,7 +134,7 @@
   padding: 0;
   margin: 0;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 16px;
   display: flex;
 }
 
@@ -144,6 +144,7 @@
   background-color: #eaf2fd;
   width: 100%;
   height: 20px;
+  font-size: 16px;
 }
 
 /* estudios talentotech */
@@ -152,7 +153,6 @@
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  background-color: blue;
 }
 
 .estudio_cuatro_imagen_cuatro {
@@ -169,6 +169,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  font-size: 16px;
 }
 
 .estudio_cuatro_parrafo_cuatro {
@@ -177,6 +178,7 @@
   height: 20px;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 /* otros estudios */
@@ -285,7 +287,6 @@
   .estudio_cuatro {
     width: 100%;
     height: auto;
-    background-color: chartreuse;
   }
   .estudio_uno {
     width: 100%;
@@ -294,6 +295,12 @@
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    text-align: center;
+  }
+  .estudio_uno_parrafo {
+    font-size: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
   }
 
   .estudio_dos_imagen_adso {
@@ -301,19 +308,47 @@
     height: auto;
     display: flex;
   }
+
+  .estudio_dos_parrafo {
+    font-size: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  .estudio_dos_parrafo_dos {
+    margin-left: 30px;
+  }
   .estudio_tres {
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
   }
+  .estudio_tres_parrafo {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 10px;
+  }
 
+  .estudio_tres_parrafo_tres {
+    margin-left: 30px;
+  }
   .estudio_tres_imagen_tres {
     width: 72%;
     height: auto;
   }
+
   .estudio_cuatro_imagen_cuatro {
     width: 72%;
     height: auto;
+  }
+  .estudio_cuatro_parrafo {
+    margin-top: 10px;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+  .estudio_cuatro_parrafo_cuatro {
+    margin-left: 30px;
   }
 }
