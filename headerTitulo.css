@@ -64,14 +64,13 @@ body {
 main {
   width: 100%;
   max-width: 100%;
-  background-color: black;
 }
 
 /* Seccion del titulo, parrafo, link del dev y fotografia */
 .section-Titulo {
   max-width: 100%;
   height: auto;
-  background-color: green;
+
   display: flex;
   margin-top: 2%;
   flex-direction: row-reverse;
@@ -84,7 +83,7 @@ main {
   font-size: 3.5vw;
   color: black;
   margin: 0;
-  background-color: rgb(226, 46, 46);
+
   margin-top: 40px;
   width: 100%;
   display: flex;
@@ -95,8 +94,8 @@ main {
 .section-Titulo p {
   font-size: 1.37em;
   margin-bottom: 4%;
-  background-color: blue;
-  width: 100%;
+  width: 90%;
+  text-align: justify;
 }
 
 .section-Titulo-Principal-Nav {
@@ -122,7 +121,6 @@ main {
   border-radius: 50%;
   max-width: 300px;
   height: auto;
-  background-color: rgb(251, 255, 0);
 }
 
 @media (max-width: 768px) {
