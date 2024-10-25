@@ -8,114 +8,127 @@
 
 .section-formacion-academica {
   background-color: #eaf2fd;
-  height: 800px;
+  width: 100%;
+  height: auto;
   display: flex; /* Habilita flexbox */
-  flex-direction: column; /* Coloca el título y los estudios en columna */
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
   align-items: center; /* Centra el contenido horizontalmente */
+  padding-bottom: 50px;
 }
 
 .titulo-section-formacion-academica {
-  margin-top: 82px;
-  margin-bottom: 32px; /* Espacio entre el título y los estudios */
+  margin-top: 20px;
+  margin-bottom: 32px;
   font-size: 1.25em;
+  background-color: rgb(197, 13, 13);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .estudios-contenedor {
   display: flex; /* Habilita flexbox para los estudios */
   justify-content: center; /* Centra los estudios horizontalmente */
-  gap: 10px; /* Espacio entre los divs de estudios */
+  gap: 10px;
+  background-color: blueviolet;
 }
 
 .estudio_uno,
 .estudio_dos,
 .estudio_tres,
 .estudio_cuatro {
-  background-color: white;
-  width: 200px;
-  height: 200px;
-  display: flex; /* Habilita flexbox para centrar el texto en los estudios */
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+  display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra el contenido horizontalmente dentro de cada div */
-  align-items: flex-start; /* Centra el contenido verticalmente dentro de cada div */
+  justify-content: center;
   font-family: "Raleway", sans-serif;
+  flex-wrap: wrap;
 }
 
 /* estudio ingenieria de sistemas */
 
 .estudio_uno_imagen_unad {
-  height: 130px;
-  height: 130px;
-  margin-top: 40px;
-  margin-left: 17px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .estudio_uno_parrafo {
-  text-align: left;
-  width: 200px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
   height: 20px;
   background-color: #eaf2fd;
   padding: 0;
   margin: 0;
-  font-weight: bold;
   font-size: 1em;
-  justify-content: center;
-  padding-top: 5px;
+  margin-top: 5px;
+  font-weight: bold;
 }
 
 .estudio_uno_parrafo_uno {
-  padding: 0;
-  margin: 0;
   background-color: #eaf2fd;
-  width: 200px;
+  width: 100%;
   height: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 /* estudio ADSO SENA */
 
 .estudio_dos_imagen_adso {
-  height: 130px;
-  height: 130px;
-  margin-top: 40px;
-  margin-left: 30px;
+  width: 90%;
+  height: auto;
+  display: flex;
+  margin-left: 10px;
 }
 
 .estudio_dos_parrafo {
-  text-align: left;
-  width: 200px;
+  display: flex;
+  width: 100%;
   height: 20px;
   background-color: #eaf2fd;
   padding: 0;
   margin: 0;
   font-weight: bold;
   font-size: 1em;
-  justify-content: center;
-  padding-top: 5px;
+
+  margin-top: 5px;
 }
 
 .estudio_dos_parrafo_dos {
   padding: 0;
   margin: 0;
   background-color: #eaf2fd;
-  width: 200px;
+  width: 100%;
   height: 20px;
 }
 
 /* estudio Alura Latam */
 
 .estudio_tres {
-  align-items: center;
+  width: 90%;
+  height: auto;
+  display: flex;
+  margin-left: 10px;
+  flex-wrap: wrap;
 }
 
 .estudio_tres_imagen_tres {
-  height: 130px;
-  height: 130px;
-  padding: 10px;
-  margin-top: 20px;
+  width: 90%;
+  height: auto;
+  margin-left: 10px;
+  margin-bottom: 25px;
 }
 
 .estudio_tres_parrafo {
   text-align: left;
-  width: 200px;
+  width: 100%;
   height: 20px;
   background-color: #eaf2fd;
   padding: 0;
@@ -123,30 +136,29 @@
   font-weight: bold;
   font-size: 1em;
   justify-content: center;
-  padding-top: 5px;
 }
 
 .estudio_tres_parrafo_tres {
   padding: 0;
   margin: 0;
   background-color: #eaf2fd;
-  width: 200px;
+  width: 100%;
   height: 20px;
 }
 
 /* estudios talentotech */
 
 .estudio_cuatro_imagen_cuatro {
-  height: 130px;
-  height: 130px;
-  padding: 10px;
-  margin-top: 20px;
-  margin-left: 25px;
+  width: 90%;
+  height: auto;
+  margin-left: 10px;
+  flex-wrap: wrap;
 }
 
 .estudio_cuatro_parrafo {
-  text-align: left;
-  width: 200px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   height: 20px;
   background-color: #eaf2fd;
   padding: 0;
@@ -154,14 +166,13 @@
   font-weight: bold;
   font-size: 1em;
   justify-content: center;
-  padding-top: 5px;
 }
 
 .estudio_cuatro_parrafo_cuatro {
   padding: 0;
   margin: 0;
   background-color: #eaf2fd;
-  width: 200px;
+  width: 100%;
   height: 20px;
 }
 
