@@ -63,6 +63,11 @@
   opacity: 0.5;
 }
 
+.contenedor_imagenes img:active {
+  transform: scale(2);
+  opacity: 100;
+}
+
 .contenedor_botones {
   /* background-color: coral; */
   width: 30%;
