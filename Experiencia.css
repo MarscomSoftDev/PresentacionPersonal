@@ -15,6 +15,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding-bottom: 60px;
 }
 .Titulo_Principal {
   width: 90%;

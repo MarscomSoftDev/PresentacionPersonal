@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="sobremi.css" />
     <link rel="stylesheet" href="formacion_academica.css">
     <link rel="stylesheet" href="Experiencia.css">
+    <link rel="stylesheet" href="Formulario.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -319,9 +320,35 @@
           <button class="repositorio">Repositorio</button>
           <button class="demo">Ver demo</button>
         </div>
-      </article>    
-  
+      </article>           
     </section>
+
+
+    <section class="formulario">     
+      
+      <img class="imagenFormulario" src="/Imagenes/header/Telefono.png" alt="">
+   
+    <div class="contenedor_contactos_form">
+     
+      <div class="contacto_parrafos">
+        <h2>Contacto</h2>
+        <p>Quieres Contactarme?</p>
+        <p>Llena el siguiente formulario y me podre en contacto lo antes posible. </p>
+     </div>
+     <form class="formulario_formulario" action="">
+        <label for="nombre"></label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <label for="Telefono"></label>
+        <input type="tel" name="Telefono" id="Telefono" placeholder="Telefono">
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <label for="mensaje"></label>
+       <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
+    <input type="submit" class="button" value="Enviar mensaje">
+      </form>
+    </div>
+    </section>
+
     </main>
   </body>
 </html>
