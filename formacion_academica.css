@@ -205,6 +205,8 @@
   align-items: center;
   margin-bottom: 20px;
   flex-wrap: wrap;
+
+  padding-bottom: 50px;
 }
 
 /* Contenedor principal de los skills */
@@ -345,13 +347,10 @@
 
   .section-otros-estudios {
     display: flex;
-
     justify-content: space-around;
-
     flex-wrap: wrap;
   }
 
-  /* Contenedor principal de los skills */
   .section-estudios-contenedor-principal {
     display: flex;
     justify-content: center;

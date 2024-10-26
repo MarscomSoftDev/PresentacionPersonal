@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-Regular.woff2") format("woff2"),
+    url("/fonts/Raleway-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.Experiencia_contenedor {
+  width: 100%;
+  height: auto;
+  /* background-color: aqua; */
+  background-color: #eaf2fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.Titulo_Principal {
+  width: 90%;
+  display: flex;
+  text-align: center;
+}
+.Titulo_Principal p {
+  width: 100%;
+  height: auto;
+  /* background-color: rgb(255, 3, 3); */
+  font-size: 2em;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.contenedor {
+  /* background-color: blue; */
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-radius: 16px;
+}
+
+.contenedor_imagenes {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 15px;
+}
+.contenedor_imagenes h2 {
+  width: 100%;
+  height: auto;
+}
+.contenedor_imagenes img {
+  border-radius: 16px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.contenedor_botones {
+  /* background-color: coral; */
+  width: 30%;
+  height: auto;
+  padding-top: 85px;
+}
+
+.contenedor_botones p {
+  padding-left: 10px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  text-align: left;
+}
+.repositorio {
+  font-family: "Raleway", sans-serif;
+  color: #2a7ae4; /* Color del texto */
+  border: 1px solid #2a7ae4;
+  padding: 12px 24px; /* Espacio interno */
+  font-size: 1em; /* Tamaño del texto */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer; /* Cambia el cursor a una mano */
+  transition: background-color 0.3s, transform 0.2s; /* Transición para suavizar efectos */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+  margin-left: 10px;
+}
+
+/* Efecto hover */
+button:hover {
+  background-color: #45a049; /* Color de fondo en hover */
+  transform: translateY(-2px); /* Levanta el botón */
+}
+
+/* Efecto al hacer clic */
+button:active {
+  transform: translateY(0px); /* Restablece la posición */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Reduce la sombra */
+}
+
+.demo {
+  font-family: "Raleway", sans-serif;
+  color: #2a7ae4;
+  border: 1px solid #2a7ae4;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  margin-left: 10px;
+}
+
+/* Efecto hover */
+button:hover {
+  background-color: transparent;
+  transform: translateY(-2px);
+}
+/* Efecto al hacer clic */
+button:active {
+  transform: translateY(0px); /* Restablece la posición */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Reduce la sombra */
+}
+
+.contenedor:nth-child(even) {
+  flex-direction: row-reverse;
+}
