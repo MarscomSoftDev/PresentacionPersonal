@@ -216,6 +216,7 @@
   flex-wrap: wrap;
   width: 100%;
   max-width: 1136px; /* Limitar el ancho máximo del contenedor */
+  background-color: bisque;
 }
 
 /* Cada contenedor individual de skill */

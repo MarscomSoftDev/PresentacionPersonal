@@ -92,7 +92,7 @@
       </section>
       <section class="section-sobremi">
         <div class="section-sobremi-titulo">
-          <h2>Sobre mi</h2>
+          <h2 id="sobremi">Sobre mi</h2>
         </div>
           <div class="section-sobremi-parrafo">      
           
@@ -117,7 +117,7 @@
                
       </section>
       <section class="section-skills">
-        <h2 class="section-skills-titulo">Skills</h2>
+        <h2 class="section-skills-titulo" id="skills">Skills</h2>
         <div class="section-skills-contenedor-principal">
           <div class="section-skills-skills">
             <img src="/Imagenes/header/html5.png" alt="" />
@@ -157,7 +157,7 @@
 
     </section>
     <section class="section-hobbies">
-      <h2 class="section-hobbies-titulo">Hobbies</h2>
+      <h2 class="section-hobbies-titulo" id="hobbies">Hobbies</h2>
       <div class="section-hobbies-contenedor-principal">
         <div class="section-hobbies-hobbies">
           <img src="/Imagenes/header/programacion.png" alt="" />
@@ -196,7 +196,7 @@
     <!-- formacion academica -->
     <section class="section-formacion-academica"> 
       <div class="titulo-section-formacion-academica">
-      <h2>Formacion academica profesional</h2>
+      <h2 id="formacion">Formacion academica profesional</h2>
        </div>
       <div class="estudios-contenedor">
         <div class="estudio_uno">            
@@ -269,7 +269,7 @@
 
      <!-- experiencia laboral -->
     <section class="Experiencia_contenedor">
-      <div class="Titulo_Principal"><p>Experiencia</p></div>      
+      <div class="Titulo_Principal"><p id="proyectos">Proyectos</p></div>      
       <article class="contenedor">  
         <div class="contenedor_imagenes">
           <h2>Juego Secreto</h2>
@@ -278,8 +278,9 @@
         </div>
         <div class="contenedor_botones">
           <p>Juego, encuentra el numero secreto en la menor cantidad de intentos posibles.</p>
-          <button class="repositorio">Repositorio</button>
-          <button class="demo">Ver demo</button>
+          <button class="repositorio" onclick="window.open('https://github.com/MarscomSoftDev/JuegoSecreto', '_blank')">Repositorio</button>
+
+          <button class="demo" onclick="window.open('https://juego-secreto-ten-sigma.vercel.app/', '_blank')">Ver demo</button>
         </div>
       </article>
       <article class="contenedor">  
@@ -331,24 +332,32 @@
     <div class="contenedor_contactos_form">
      
       <div class="contacto_parrafos">
-        <h2>Contacto</h2>
+        <h2 id="contacto">Contacto</h2>
         <p>Quieres Contactarme?</p>
         <p>Llena el siguiente formulario y me podre en contacto lo antes posible. </p>
      </div>
-     <form class="formulario_formulario" action="">
+     <form class="formulario_formulario" action="https://formsubmit.co/marscompereira@gmail.com" method="POST" >
         <label for="nombre"></label>
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <input type="text" name="name" id="nombre" placeholder="Nombre">
         <label for="Telefono"></label>
-        <input type="tel" name="Telefono" id="Telefono" placeholder="Telefono">
+        <input type="tel" name="phone" id="Telefono" placeholder="Telefono">
         <label for="email"></label>
         <input type="email" name="email" id="email" placeholder="Email">
         <label for="mensaje"></label>
-       <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
+       <textarea name="mensaje" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
     <input type="submit" class="button" value="Enviar mensaje">
+    <input type="hidden" name="_next" value="https://presentacion-personal.vercel.app/">
+    <input type="hidden" name="_captcha" value="false">
       </form>
     </div>
     </section>
 
     </main>
+    <footer>
+      
+      <p><strong>Desarrollado por Marscom Dev</strong></p>
+   
+    </div>
+    </footer>
   </body>
 </html>
