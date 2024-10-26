@@ -59,6 +59,10 @@
   margin-left: 20px;
 }
 
+.contenedor_imagenes img:hover {
+  opacity: 0.5;
+}
+
 .contenedor_botones {
   /* background-color: coral; */
   width: 30%;
