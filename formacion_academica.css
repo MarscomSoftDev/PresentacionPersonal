@@ -216,7 +216,6 @@
   flex-wrap: wrap;
   width: 100%;
   max-width: 1136px; /* Limitar el ancho máximo del contenedor */
-  background-color: bisque;
 }
 
 /* Cada contenedor individual de skill */
@@ -348,7 +347,7 @@
 
   .section-otros-estudios {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -357,7 +356,6 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 0%;
-    gap: 10px;
+    gap: 40px;
   }
 }
