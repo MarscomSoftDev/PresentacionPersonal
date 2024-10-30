@@ -197,3 +197,60 @@ main {
     display: none;
   }
 }
+
+@media (max-width: 360px) {
+  .header {
+    background-color: aqua;
+  }
+
+  .section-Titulo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-Titulo-Principal {
+    background-color: aquamarine;
+    width: 100%;
+    height: auto;
+  }
+
+  .section-Titulo h1 {
+    width: 100%;
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  .section-Titulo p {
+    font-size: 0.8em;
+    margin-bottom: 4%;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .section-foto {
+    background-color: blueviolet;
+    width: 100%;
+  }
+
+  .section-foto-dev {
+    max-width: 100px; /* Ajusta el tamaño de la imagen en pantallas más pequeñas */
+    margin-top: 20px;
+  }
+  .section-Titulo-Principal-Nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-Titulo-Principal-Nav a {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .section-nav-icono {
+    display: none;
+  }
+}
