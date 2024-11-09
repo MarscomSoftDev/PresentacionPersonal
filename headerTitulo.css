@@ -118,8 +118,10 @@ main {
 }
 
 .section-foto-dev {
+  margin-top: 80px;
+  margin-left: 40px;
   border-radius: 50%;
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
 }
 @media (max-width: 900px) {
@@ -158,8 +160,8 @@ main {
     display: inline;
   }
   .section-foto-dev {
-    max-width: 200px; /* Ajusta el tamaño de la imagen en pantallas más pequeñas */
-    margin-top: 20px;
+    margin: 30px;
+    max-width: 230px; /* Ajusta el tamaño de la imagen en pantallas más pequeñas */
   }
 
   .section-Titulo {
